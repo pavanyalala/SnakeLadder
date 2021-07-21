@@ -30,6 +30,14 @@ namespace SnakeAndLadderGame
                             startPoint = 0;
                         break;
                     }
+                    if (startPoint > 100)
+                    {
+                        startPoint = startPoint - dice;
+                    }
+                    else if (startPoint == 100)
+                    {
+                        break;
+                    }
 
                 }
                 Console.WriteLine("Current Position of Player : " + startPoint);
