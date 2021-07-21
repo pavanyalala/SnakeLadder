@@ -8,7 +8,7 @@ namespace SnakeAndLadderGame
         {
             Console.WriteLine("Welcom to Snake And Ladder Game ");
             SnakeLadder snakeLadder = new SnakeLadder();
-            snakeLadder.initialPosition();
+            snakeLadder.RollDice();
 
         }
     }

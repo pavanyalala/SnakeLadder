@@ -6,10 +6,14 @@ namespace SnakeAndLadderGame
 {
     class SnakeLadder
     {
+        //variables
         int startPoint = 0;
-        public void initialPosition()
+        public void RollDice()//method gives dice value
         {
-            Console.WriteLine("Player Initail Position is : " + startPoint);    
+            Random random  = new Random();
+            int dice = random.Next(1, 7);//1-6 dice values
+            Console.WriteLine("Rolled Dice Value : " + dice);
+                
         }
     }
 }
